@@ -1,0 +1,104 @@
+/* Full-screen center */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 1rem;
+}
+ 
+/* Card styling */
+.register-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+ 
+/* Heading */
+.register-card h2 {
+  color: #333;
+  font-weight: 600;
+}
+ 
+/* Form Groups */
+.user-form .form-group {
+  margin-bottom: 1.2rem;
+}
+ 
+/* Labels */
+.user-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+ 
+/* Inputs and Select */
+.user-form input,
+.user-form select {
+  width: 95%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.user-form input:focus,
+.user-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+ 
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+ 
+.btn-submit:hover {
+  background-color: #0069d9;
+}
+ 
+/* Links */
+.task-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #007bff;
+}
+ 
+.task-link:hover {
+  text-decoration: underline;
+}
+ 
+/* Messages */
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+ 
+.success {
+  color: #28a745;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+ 

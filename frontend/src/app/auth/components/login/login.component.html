@@ -1,0 +1,45 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+  <h3>Login</h3>
+ 
+  <!-- Username -->
+  <label>
+    Username:
+    <input type="text" formControlName="username" />
+    <p
+      class="error"
+      *ngIf="
+        loginForm.controls['username'].touched &&
+        loginForm.controls['username'].errors?.['required']
+      "
+    >
+      Username is required
+    </p>
+  </label>
+ 
+  <!-- Password -->
+  <label>
+    Password:
+    <input type="password" formControlName="password" />
+    <p
+      class="error"
+      *ngIf="
+        loginForm.controls['password'].touched &&
+        loginForm.controls['password'].errors?.['required']
+      "
+    >
+      Password is required
+    </p>
+  </label>
+ 
+  <!-- Submit Button -->
+  <button type="submit">Log in</button>
+ 
+  <!-- Signup Link -->
+  <a routerLink="/auth/add-user" class="signup-link">Sign up</a>
+ 
+  <!-- Error Message -->
+  <div *ngIf="loginError$ | async as error" class="error">
+    {{ error.message }}
+  </div>
+</form>
+ 
